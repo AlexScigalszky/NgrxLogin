@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthModule } from './auth/auth.module';
@@ -13,6 +12,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { CoreModule } from './core/core.module';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppComponent } from './core/containers/app.component';
 
 @NgModule({
   imports: [
@@ -63,9 +63,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     
 
   ],
-  declarations: [
-    AppComponent
-  ],
+  declarations: [],
   providers: [],
   bootstrap: [AppComponent]
 })
